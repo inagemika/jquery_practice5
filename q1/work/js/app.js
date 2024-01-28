@@ -1,19 +1,19 @@
 $(function () {
   $("#q1").css("color","blue");
   //読み込み時に、Q1の文字を青色に変化
-  
+
   $("#q2").on("click", function () {
-    $(this).css("background", "green") 
+    $(this).css("background", "green")
     //Q2のボタンをクリックすると、ボタンの色を緑色に変化
   });
-  
+
   $("#q3").on("click", function () {
-    $(this).fadeOut(3000) 
+    $(this).fadeOut(3000)
     //Q3のボタンをクリックすると、3秒かけてフェードアウト
   });
 
   $("#q4").on("click", function () {
-    $(this).addClass("large") 
+    $(this).addClass("large")
     //Q4のボタンをクリックすると、ボタンの幅を300px、内側の余白を50px、文字のサイズを20pxに変更
   });
 
@@ -38,8 +38,8 @@ $(function () {
     Q8のボタンからマウスを離すと、変更されたボタンの幅300px、内側の余白50px、文字のサイズ20pxを削除。*/
 
   $("#q9 li").on("click", function () {
-      const a = $(this).index();
-      alert(a);
+      let nums = $(this).index();
+      alert(nums);
   /*Q9-1をクリックすると、インデックス番号0をアラート表示
     Q9-2をクリックすると、インデックス番号1をアラート表示
     Q9-3をクリックすると、インデックス番号2をアラート表示
@@ -47,11 +47,11 @@ $(function () {
   });
 
   $("#q10 li").on("click", function () {
-    const a = $(this).index();
-    $("#q11 li").eq(a).addClass("large-text")
+    let nums = $(this).index();
+    $("#q11 li").eq(nums).addClass("large-text")
     /*Q10-1をクリックすると、Q11-1を取得し、テキストの文字のサイズを30pxに変更
     Q10-2をクリックすると、Q11-2を取得し、テキストの文字のサイズを30pxに変更
     Q10-3をクリックすると、Q11-3を取得し、テキストの文字のサイズを30pxに変更
     Q10-4をクリックすると、Q11-4を取得し、テキストの文字のサイズを30pxに変更*/
   });
-});  
+});
