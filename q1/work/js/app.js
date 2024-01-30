@@ -32,14 +32,14 @@ $(function () {
     //Q7のボタンをクリックすると、<button id="q7" class="btn">Q7</button>（ノード）をコンソールで表示
   });
 
-  $("#q8").on({mouseenter: function() { $(this).addClass("large") },mouseleave: function() { $(this).removeClass("large") } 
+  $("#q8").on({mouseenter: function() { $(this).addClass("large") },mouseleave: function() { $(this).removeClass("large") }
   });
   /*Q8のボタンにマウスを重ねると、ボタンのサイズを、ボタンの幅を300px、内側の余白を50px、文字のサイズを20pxに変更、
     Q8のボタンからマウスを離すと、変更されたボタンの幅300px、内側の余白50px、文字のサイズ20pxを削除。*/
 
   $("#q9 li").on("click", function () {
-      let index_num = $(this).index();
-      alert(index_num);
+    const indexNum = $(this).index();
+    alert(indexNum);
   /*0番目の値のQ9-1をクリックすると、インデックス番号0をアラート表示
     1番目の値のQ9-2をクリックすると、インデックス番号1をアラート表示
     2番目の値のQ9-3をクリックすると、インデックス番号2をアラート表示
@@ -47,8 +47,8 @@ $(function () {
   });
 
   $("#q10 li").on("click", function () {
-    let index_value = $(this).index();
-    $("#q11 li").eq(index_value).addClass("large-text")
+    const indexValue = $(this).index();
+    $("#q11 li").eq(indexValue).addClass("large-text")
     /*Q10-1をクリックすると、インデックス番号に対応するQ11-1の値を取得し、テキストの文字のサイズを30pxに変更
     Q10-2をクリックすると、インデックス番号に対応するQ11-2の値を取得し、テキストの文字のサイズを30pxに変更
     Q10-3をクリックすると、インデックス番号に対応するQ11-3の値を取得し、テキストの文字のサイズを30pxに変更
