@@ -76,7 +76,7 @@ $(function() {
       //リスト要素の直前に「検索結果が見つかりませんでした。、別のキーワードで検索して下さい。」を表示
     }
   }
-  function displayError(xhr,error) {
+  function displayError(xhr) {
   //APIがうまく送信されなかった時エラーメッセージ表示
     $(".lists").empty();
     //検索結果で表示される詳細は何もなし
@@ -91,7 +91,7 @@ $(function() {
       $(".lists").before('<div class="message">検索キーワードが有効ではありません。<br>1文字以上で検索して下さい。</div>')
       //リスト要素の直前に「検索キーワードが有効ではありません。、1文字以上で検索して下さい。」を表示
     }else{
-      $(".lists").before(error='<div class="message">予期せぬエラーが起きました。<br>再読み込みを行ってください。</div>')
+      $(".lists").before('<div class="message">予期せぬエラーが起きました。<br>再読み込みを行ってください。</div>')
       //リスト要素の直前に「予期せぬエラーが起きました。、再読み込みを行ってください。」を表示
     }
   }
