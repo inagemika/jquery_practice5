@@ -11,9 +11,9 @@
 // });
 
 $(function() {
-  let pageCount = 1,
+  let pageCount = 1;
   //初期値は、１に設定
-    previousWord = "";
+  let previousWord = "";
     //入力する内容は何も入っていない
   $(".search-btn").on("click", function() {
   //検索ボタンをクリックしたとき

@@ -1,8 +1,8 @@
 $(function() {
   $(".select-box").on("change", function() {
   //セレクトボックス内のどれか一つの項目(選択肢）をクリックするとイベントを実行
-    const allFood =$(this).val(),
-      foodList=$(".food-list li");
+    const allFood =$(this).val();
+    const foodList=$(".food-list li");
       //セレクトボックス内の項目(選択肢）の中のすべての値を取得
     if("all" === allFood){
       foodList.show();
